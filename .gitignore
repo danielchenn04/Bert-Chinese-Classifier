@@ -1,0 +1,15 @@
+.claude
+# dependencies                                                                                  
+node_modules/                                                                                   
+                                                                                                  
+# Next.js build output                                                                          
+.next/                                                                                          
+out/                                                                                            
+                                                                                                  
+# OS
+.DS_Store
+                                                                                                  
+# env files (just in case)
+.env                                                                                            
+.env.local                                                                                   
+.env*.local

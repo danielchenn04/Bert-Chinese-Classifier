@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #05070d; }
+::selection { background: rgba(77, 214, 255, 0.3); }
+
+@keyframes pulseDot {
+  0%   { transform: scale(1); opacity: 1; }
+  70%  { transform: scale(2.8); opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: none; }
+}
+
+.scrollpanel::-webkit-scrollbar { width: 8px; }
+.scrollpanel::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.13); border-radius: 4px; }
+
+textarea:focus { border-color: rgba(77,214,255,0.6) !important; }
