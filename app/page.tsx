@@ -108,7 +108,7 @@ export default function Home() {
       if (!mounted || !globeContainerRef.current) return;
 
       const el = globeContainerRef.current;
-      const globe = Globe()(el)
+      const globe = (Globe as any)()(el)
         .backgroundColor("rgba(0,0,0,0)")
         .showAtmosphere(true)
         .atmosphereColor(GC)
